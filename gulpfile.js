@@ -7,6 +7,8 @@ var rename = require('gulp-rename');
  */
 // Sass Source
 var scssFiles = './src/scss/style.scss';
+var scssHome = './src/scss/home.scss';
+
 
 // CSS destination
 var cssDest = './css';
@@ -38,13 +40,36 @@ gulp.task('sassprod', function() {
       .pipe(gulp.dest(cssDest));
   });
 
+// Task 'sassdev' - Para executar o comando usamos 'gulp sassdev'
+gulp.task('homedev', function() {
+    return gulp.src(scssHome)
+      .pipe(sass(sassDevOptions).on('error', sass.logError))
+      .pipe(gulp.dest(cssDest));
+  });
+
+// Task 'homeprod' - Para executar o comando usamos 'gulp sassprod'
+gulp.task('homeprod', function() {
+    return gulp.src(scssHome)
+      .pipe(sass(sassProdOptions).on('error', sass.logError))
+      .pipe(rename('home.min.css'))
+      .pipe(gulp.dest(cssDest));
+  });
+
 
 // Task 'watch' - Para executar o comando usamos 'gulp watch'
 gulp.task('watch', function() {
-    gulp.watch(scssFiles, ['sassdev', 'sassprod']);
+    gulp.watch(scssHome, ['sassdev', 'sassprod']);
+});
+
+// Task 'watch' - Para executar o comando usamos 'gulp watch'
+gulp.task('watch', function() {
+    gulp.watch(scssHome, ['homedev', 'homeprod']);
 });
 
 
 
 // Default task - Para executar o comando usamos 'gulp'
 gulp.task('default', ['sassdev', 'sassprod', 'watch']);
+
+// Default task - Para executar o comando usamos 'gulp'
+gulp.task('default', ['homedev', 'homeprod', 'watch']);
