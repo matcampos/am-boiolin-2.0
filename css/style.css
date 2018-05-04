@@ -1,0 +1,14 @@
+.img-fundo {
+  background: url("../img/rolez.png") 50%/cover no-repeat !important;
+  height: 100%;
+  position: fixed;
+}
+
+#wrapper {
+  width: 100%;
+}
+
+.mt {
+  width: 500px;
+  margin: 30% auto 0 auto;
+}

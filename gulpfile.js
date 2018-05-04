@@ -11,7 +11,6 @@ var scssFiles = './src/scss/style.scss';
 // CSS destination
 var cssDest = './css';
 
-
 // Opção para Desenvolvimento
 var sassDevOptions = {
     outputStyle: 'expanded'
