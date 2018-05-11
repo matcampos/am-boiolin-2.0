@@ -1,14 +1,223 @@
-.img-fundo {
-  background: url("../img/rolez.png") 50%/cover no-repeat !important;
-  height: 100%;
-  position: fixed;
+.content {
+  height: 2691px;
+  width: 1440px;
+  margin: 0 auto;
 }
 
-#wrapper {
+.content .top-banner {
+  width: 1440px;
+  height: 640px;
+  background-image: url("../_assets/bg1.png");
+}
+
+.content .top-icon {
+  position: absolute;
+  top: 0;
+  width: 192px;
+  height: 68px;
+  background-image: url(../_assets/rolez2.png);
+  background-size: contain;
+  margin-left: 12%;
+}
+
+.content .box-discription {
+  position: absolute;
+  top: 142px;
+  width: 402px;
+  height: 68px;
+  color: #fff;
+  margin-left: 12%;
+  font-family: arial;
+  font-weight: 600;
+  font-size: 40px;
+}
+
+.content .social-images {
+  position: absolute;
+  top: 340px;
+  width: 244px;
+  height: 40px;
+  background-image: url(../_assets/logo_social.png);
+  background-size: cover;
+  margin-left: 12%;
+}
+
+.content .right {
+  float: right !important;
+}
+
+.content form.col-md-4.right {
+  background-color: #fff;
+  position: relative;
+  top: 159px;
+  margin-right: 15%;
+  border-radius: 6px;
+  padding: 0 30px;
+  /* label focus color */
+  /* label underline focus color */
+  /* valid color */
+  /* invalid color */
+  /* icon prefix focus color */
+}
+
+.content form.col-md-4.right .col-md-12.mt-10 {
+  margin-top: 30px;
+  text-align: center;
+  font-family: arial;
+  color: #868686;
+}
+
+.content form.col-md-4.right button.btn.btn-default {
   width: 100%;
+  background: #ff5087;
+  border: none;
+  border-radius: 30px;
+  padding: 25px 0;
+  line-height: 0px;
 }
 
-.mt {
-  width: 500px;
-  margin: 30% auto 0 auto;
+.content form.col-md-4.right label.active {
+  color: #ff5087 !important;
+}
+
+.content form.col-md-4.right .input-field label {
+  color: #868686;
+}
+
+.content form.col-md-4.right .input-field input[type=text]:focus + label {
+  color: #868686;
+}
+
+.content form.col-md-4.right .input-field input[type=text]:focus {
+  border-bottom: 1px solid #ff5087;
+  box-shadow: 0 1px 0 0 #ff5087;
+}
+
+.content form.col-md-4.right .input-field input[type=text].valid {
+  border-bottom: 1px solid #ff5087;
+  box-shadow: 0 1px 0 0 #ff5087;
+}
+
+.content form.col-md-4.right .input-field input[type=text].invalid {
+  border-bottom: 1px solid #868686;
+  box-shadow: 0 1px 0 0 #868686;
+}
+
+.content form.col-md-4.right .input-field .prefix.active {
+  color: #868686;
+}
+
+.content .center-top {
+  width: 1440px;
+  height: 860px;
+}
+
+.content .center-top .topTitle {
+  margin-top: 70px;
+  text-align: center;
+  color: #ff5087;
+  font-size: 35px;
+  font-family: arial;
+  font-weight: 600;
+}
+
+.content .center-top .discriptionTitle {
+  text-align: center;
+  color: #868686;
+  width: 700px;
+  font-size: 18px;
+  font-family: arial;
+  margin: auto;
+  margin-top: 30px;
+}
+
+.content .center-top .pd-div {
+  padding: 0 15%;
+  margin-top: 6%;
+}
+
+.content .center-top .pd-div .img1 {
+  width: 100%;
+  height: 234px;
+  background-image: url(../_assets/1.png);
+  background-size: cover;
+}
+
+.content .center-top .pd-div .img2 {
+  width: 100%;
+  height: 234px;
+  background-image: url(../_assets/2.png);
+  background-size: cover;
+}
+
+.content .center-top .pd-div .img3 {
+  width: 100%;
+  height: 234px;
+  background-image: url(../_assets/3.png);
+  background-size: cover;
+}
+
+.content .center-top .pd-div .img4 {
+  width: 100%;
+  height: 234px;
+  background-image: url(../_assets/4.png);
+  background-size: cover;
+}
+
+.content .center-top .pd-div .text {
+  text-align: center;
+  font-family: arial;
+  font-size: 16px;
+  color: #868686;
+}
+
+.content .center-bottom {
+  width: 1440px;
+  height: 392px;
+  background-image: url("../_assets/bg2.png");
+}
+
+.content .center-bottom .box-bottom {
+  width: 50%;
+  margin-left: 12%;
+  /* margin-bottom: -5px; */
+  padding: 30px;
+  text-align: center;
+  color: #fff;
+}
+
+.content .center-bottom .box-bottom .discriptionBottom {
+  margin-top: 40px;
+}
+
+.content .center-bottom button.btn.btn-default.col-md-6 {
+  float: left;
+  margin-left: 3%;
+  color: #868686;
+  background: #fff;
+  border-radius: 50px;
+  margin-top: 30px;
+  padding: 25px;
+  line-height: 0;
+}
+
+.content .center-bottom .image-cell {
+  width: 730px;
+  height: 737px;
+  position: absolute;
+  background-image: url(../_assets/mobile.png);
+  right: 0;
+  margin-right: 14%;
+  margin-top: -320px;
+}
+
+.content .bottom {
+  width: 1440px;
+  height: auto;
+}
+
+.content .bottom .cell-bottom {
+  background-image: url(../_assets/mobile2.png);
+  width: 434px;
+  height: 649px;
 }
