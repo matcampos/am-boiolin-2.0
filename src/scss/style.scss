@@ -42,6 +42,7 @@
     .right{
         float: right !important;
     }
+    
     form.col-md-4.right {
             background-color: #fff;
             position: relative;
@@ -177,10 +178,9 @@
         .image-cell{
             width: 730px;
             height: 737px;
-            position: absolute;
+            float: right;
             background-image: url(../_assets/mobile.png);
             right: 0;
-            margin-right: 14%;
             margin-top: -320px;
         }
         
