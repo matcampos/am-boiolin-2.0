@@ -1,13 +1,16 @@
 .content {
   height: 2691px;
-  width: 1440px;
+  width: 100%;
   margin: 0 auto;
 }
 
 .content .top-banner {
-  width: 1440px;
+  width: 100%;
   height: 640px;
-  background-image: url("../_assets/bg1.png");
+  background-repeat: no-repeat;
+  background-image: url(../_assets/bg1.png);
+  background-size: cover;
+  color: black;
 }
 
 .content .top-icon {
@@ -108,7 +111,7 @@
 }
 
 .content .center-top {
-  width: 1440px;
+  width: 100%;
   height: 860px;
 }
 
@@ -172,9 +175,11 @@
 }
 
 .content .center-bottom {
-  width: 1440px;
+  width: 100%;
   height: 392px;
   background-image: url("../_assets/bg2.png");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .content .center-bottom .box-bottom {
@@ -211,7 +216,7 @@
 }
 
 .content .bottom {
-  width: 1440px;
+  width: 100%;
   height: auto;
 }
 
@@ -219,4 +224,5 @@
   background-image: url(../_assets/mobile2.png);
   width: 434px;
   height: 649px;
+  margin-left: 12%;
 }
