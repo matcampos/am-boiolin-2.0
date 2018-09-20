@@ -1,206 +1,113 @@
- $margin-left:12%;
- $margin : 15%;
- .content{
-    height: 2691px;
+:root {
+    --input-padding-x: 1.5rem;
+    --input-padding-y: .75rem;
+  }
+  
+  body {
+    background: #9CECFB;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #0052D4, #65C7F7, #9CECFB);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #0052D4, #65C7F7, #9CECFB);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  }
+  
+  .card-signin {
+    border: 0;
+    border-radius: 1rem;
+    box-shadow: 0 0.5rem 1rem 0 rgba(0, 0, 0, 0.1);
+  }
+  
+  .card-signin .card-title {
+    margin-bottom: 2rem;
+    font-weight: 300;
+    font-size: 1.5rem;
+  }
+  
+  .card-signin .card-body {
+    padding: 2rem;
+  }
+  
+  .form-signin {
     width: 100%;
-    margin:0 auto;
-    .top-banner{
-        width: 100%;
-        height: 640px;
-        background-repeat: no-repeat;
-        background-image: url(../_assets/bg1.png);
-        background-size: cover;
-        color: black;
-    }
-    .top-icon{
-        position: absolute;
-        top: 0;
-        width: 192px;
-        height: 68px;
-        background-image: url(../_assets/rolez2.png);
-        background-size: contain;
-        margin-left: $margin-left;
-    }
-
-    .box-discription{
-        position: absolute;
-        top: 142px;
-        width: 402px;
-        height: 68px;
-        color: #fff;
-        margin-left: $margin-left;
-        font-family: arial;
-        font-weight: 600;
-        font-size: 40px;
-    }
-    .social-images{
-        position: absolute;
-        top: 340px;
-        width: 244px;
-        height: 40px;
-        background-image: url(../_assets/logo_social.png);
-        background-size: cover;
-        margin-left: $margin-left;
-    }
-    .right{
-        float: right !important;
-    }
-    
-    form.col-md-4.right {
-            background-color: #fff;
-            position: relative;
-            top: 159px;
-            margin-right: $margin;
-            border-radius: 6px;
-            padding: 0 30px;
-            .col-md-12.mt-10 {
-                margin-top: 30px;
-                text-align: center;
-                font-family: arial;
-                color: #868686;
-            }
-            button.btn.btn-default {
-                width: 100%;
-                background: #ff5087;
-                border: none;
-                border-radius: 30px;
-                padding: 25px 0;
-                line-height: 0px;
-            }
-            label.active {
-                color: #ff5087 !important;
-              }
-              .input-field label {
-                color: #868686;
-              }
-              /* label focus color */
-              .input-field input[type=text]:focus + label {
-                color: #868686;
-              }
-              /* label underline focus color */
-              .input-field input[type=text]:focus {
-                border-bottom: 1px solid #ff5087;
-                box-shadow: 0 1px 0 0 #ff5087;
-              }
-              /* valid color */
-              .input-field input[type=text].valid {
-                border-bottom: 1px solid #ff5087;
-                box-shadow: 0 1px 0 0 #ff5087;
-              }
-              /* invalid color */
-              .input-field input[type=text].invalid {
-                border-bottom: 1px solid #868686;
-                box-shadow: 0 1px 0 0 #868686;
-              }
-              /* icon prefix focus color */
-              .input-field .prefix.active {
-                color: #868686;
-              }
-            }
-
-    .center-top{
-        width:100%;
-        height: 860px;
-        .topTitle{
-            margin-top: 70px;
-            text-align: center;
-            color: #ff5087;
-            font-size: 35px;
-            font-family: arial;
-            font-weight: 600;
-        }
-        .discriptionTitle{
-            text-align: center;
-            color: #868686;
-            width: 700px;
-            font-size: 18px;
-            font-family: arial;
-            margin: auto;
-            margin-top: 30px;
-        }
-        .pd-div{
-            padding:0 15%;
-            margin-top: 6%;
-            .img1{
-                width: 100%;
-                height: 234px;
-                background-image: url(../_assets/1.png);
-                background-size: cover;
-            }
-            .img2{
-                width: 100%;
-                height: 234px;
-                background-image: url(../_assets/2.png);
-                background-size: cover;
-            }
-            .img3{
-                width: 100%;
-                height: 234px;
-                background-image: url(../_assets/3.png);
-                background-size: cover;
-            }
-            .img4{
-                width: 100%;
-                height: 234px;
-                background-image: url(../_assets/4.png);
-                background-size: cover;
-            }
-            .text{
-                text-align: center;
-                font-family: arial;
-                font-size: 16px;
-                color: #868686;
-            }
-        }
-    }
-    .center-bottom{
-        width: 100%;
-        height: 392px;
-        background-image: url( '../_assets/bg2.png');
-        background-repeat: no-repeat;
-        background-size:cover;
-        .box-bottom{
-            width: 50%;
-            margin-left: $margin-left;
-            /* margin-bottom: -5px; */
-            padding: 30px;
-            text-align: center;
-            color:#fff;
-            .discriptionBottom{
-                margin-top: 40px;
-            }
-        }
-        button.btn.btn-default.col-md-6 {
-            float: left;
-            margin-left: 3%;
-            color: #868686;
-            background: #fff;
-            border-radius: 50px;
-            margin-top: 30px;
-            padding: 25px;
-            line-height: 0;
-        }
-        .image-cell{
-            width: 730px;
-            height: 737px;
-            float: right;
-            background-image: url(../_assets/mobile.png);
-            right: 0;
-            margin-top: -320px;
-        }
-        
-    }
-    .bottom{
-        width: 100%;
-        height:auto;
-      .cell-bottom{
-        background-image: url(../_assets/mobile2.png);
-        width: 434px;
-        height: 649px;
-        margin-left: $margin-left;
-      }
-
-    }
-
-}
-
+  }
+  
+  .form-signin .btn {
+    font-size: 80%;
+    border-radius: 5rem;
+    letter-spacing: .1rem;
+    font-weight: bold;
+    padding: 1rem;
+    transition: all 0.2s;
+  }
+  
+  .form-label-group {
+    position: relative;
+    margin-bottom: 1rem;
+  }
+  
+  .form-label-group input {
+    border-radius: 2rem;
+  }
+  
+  .form-label-group>input,
+  .form-label-group>label {
+    padding: var(--input-padding-y) var(--input-padding-x);
+  }
+  
+  .form-label-group>label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    width: 100%;
+    margin-bottom: 0;
+    /* Override default `<label>` margin */
+    line-height: 1.5;
+    color: #495057;
+    border: 1px solid transparent;
+    border-radius: .25rem;
+    transition: all .1s ease-in-out;
+  }
+  
+  .form-label-group input::-webkit-input-placeholder {
+    color: transparent;
+  }
+  
+  .form-label-group input:-ms-input-placeholder {
+    color: transparent;
+  }
+  
+  .form-label-group input::-ms-input-placeholder {
+    color: transparent;
+  }
+  
+  .form-label-group input::-moz-placeholder {
+    color: transparent;
+  }
+  
+  .form-label-group input::placeholder {
+    color: transparent;
+  }
+  
+  .form-label-group input:not(:placeholder-shown) {
+    padding-top: calc(var(--input-padding-y) + var(--input-padding-y) * (2 / 3));
+    padding-bottom: calc(var(--input-padding-y) / 3);
+  }
+  
+  .form-label-group input:not(:placeholder-shown)~label {
+    padding-top: calc(var(--input-padding-y) / 3);
+    padding-bottom: calc(var(--input-padding-y) / 3);
+    font-size: 12px;
+    color: #777;
+  }
+  
+  .btn-google {
+    color: white;
+    background-color: #ea4335;
+  }
+  
+  .btn-facebook {
+    color: white;
+    background-color: #3b5998;
+  }
