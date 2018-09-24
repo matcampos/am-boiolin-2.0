@@ -12,11 +12,21 @@
 </head>
 
 <body>
-    <div class="col-md-12">
+    <div class="col-md-12" id="msg" style="opacity: 0">
         <h1 class="text-center" style="margin-top:45vh;"> EMAIL ENVIADO COM SUCESSO !
         </h1>
         <a class="btn btn-outline-info" style="margin-left:calc(50vw - 51.92px);" href="index.html">Voltar</a>
     </div>
+    <script src="js/jquery.min.js"></script>
+    <script>
+        $(() => {
+            $("#msg").animate({
+                'opacity': '1'
+            },1000, () =>{
+
+            })
+        })
+    </script>
 </body>
 
 </html>
