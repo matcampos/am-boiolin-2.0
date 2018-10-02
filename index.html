@@ -1,15 +1,493 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html class="no-js" lang="pt">
 
 <head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<meta http-equiv="X-UA-Compatible" content="ie=edge">
-	<title>Worktime</title>
+    <meta charset="utf-8">
+    <meta name="author" content="Sismodulos - São Paulo-SP">
+    <meta name="description" content="PromoterK | Aplicativo integrado com painel de gerenciamento web que é capaz de auxiliar no gerenciamento de equipes externas. gerencimento de equipes, sistema de gerenciamento de equipes, app de gerenciamento de equipes, controle de equipes externas, ponto eletronico, ponto co geolocalização, app de localização, controle de produtividade, controle de promotores de loja, gerenciamento de promotores, app para promotores, ponto eletrônico, pdv, pda, ponto, gps,geo localização, fotos de trabalhos,relatórios,tarefas, ordem de serviços, telecom,equipes externas, monitoramento de equipe de campo,equipes externas ponto de localização, gerenciamento de equipes externas,monitoramento de quipes externas em tempo real,gestão de merchandising, monitoramento de equipe de campo,gestão de equipe, gestão de funcionários externos, gestão de colaboradores externos, gestão de equipe externa, localizar funcionário, como localizar funcionário, aumentar produtividade da empresa, geolocalização de funcionário, geolocalização de colaborador, gestão inteligente, como gerenciar equipe externa, gerenciar nunca foi tão simples, controle em tempo real">
+    <meta name="keywords" content="Aplicativo de gerenciamento de equipes, gerencimento de equipes, sistema de gerenciamento de equipes, app de gerenciamento de equipes, controle de equipes externas, ponto eletronico, ponto co geolocalização, app de localização, controle de produtividade, controle de promotores de loja, gerenciamento de promotores, app para promotores, ponto eletrônico, pdv, pda, ponto, gps,geo localização, fotos de trabalhos,relatórios,tarefas, ordem de serviços, telecom,equipes externas, monitoramento de equipe de campo,equipes externas ponto de localização, gerenciamento de equipes externas,monitoramento de quipes externas em tempo real,gestão de merchandising, monitoramento de equipe de campo,gestão de equipe, gestão de funcionários externos, gestão de colaboradores externos, gestão de equipe externa, localizar funcionário, como localizar funcionário, aumentar produtividade da empresa, geolocalização de funcionário, geolocalização de colaborador, gestão inteligente, como gerenciar equipe externa, gerenciar nunca foi tão simples, controle em tempo real">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Title -->
+    <title>WorkTime</title>
+    <!-- Place favicon.ico in the root directory -->
+    <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+    <link rel="shortcut icon" type="image/ico" href="images/favicon.ico" />
+    <!-- Plugin-CSS -->
+    <link rel="stylesheet" href="css/bootstrap.1.min.css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/linearicons.css">
+    <link rel="stylesheet" href="css/magnific-popup.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <!-- Main-Stylesheets -->
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/index.min.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <script src="js/vendor/modernizr-2.8.3.min.js"></script>
+    <!--[if lt IE 9]>
+        <script src="//oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+        <script src="//oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
 </head>
 
-<body>
+<body data-spy="scroll" data-target=".mainmenu-area">
+    <!-- Preloader-content -->
+    <div class="preloader">
+        <span><i class="lnr lnr-sun"></i></span>
+    </div>
+    <!-- MainMenu-Area -->
+    <nav class="mainmenu-area" data-spy="affix" data-offset-top="200">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#primary_menu">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <div class="box-icon"><img src="images/logo_48.png"></div>
+                <div class="logo">
+                    WorkTime
+                </div>
+            </div>
+            <div class="collapse navbar-collapse" id="primary_menu">
+                <ul class="nav navbar-nav mainmenu">
+                    <li class="active"><a href="#home_page">Home</a></li>
+                    <li><a href="#features_page">Recursos</a></li>
+                    <li><a href="#price_page">Preços</a></li>
+                    <li><a href="#questions_page">FAQ</a></li>
+                    <li><a href="#about_page">Quem Somos</a></li>
+                    <li><a href="#cadastro">Entrar/Registrar</a></li>
+                    <li><a href="#contact_page">Contatos</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- MainMenu-Area-End -->
+    <!-- Home-Area -->
+    <header class="home-area overlay" id="home_page">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12 hidden-sm col-md-5">
+                    <figure class="mobile-image wow fadeInUp" data-wow-delay="0.2s">
+                        <img src="images/header-mobile.png" alt="">
+                    </figure>
+                </div>
+                <div class="col-xs-12 col-md-7">
+                    <div class="space-80 hidden-xs"></div>
+                    <h1 class="wow fadeInUp" data-wow-delay="0.4s">Controle de horas de trabalho</h1>
+                    <div class="space-20"></div>
+                    <div class="desc wow fadeInUp" data-wow-delay="0.6s">
+                        <p>Empresas estão se atualizando e se adaptando à nova geração.<br>
+                        Não fique pra trás, controle o seu tempo de trabalho ou dos funcionários de sua empresa de forma simples e rápida!
+                        </p>
+                    </div>
+                    <div class="space-20"></div>
+                    <a href="#" class="bttn-white sq"><img src="images/apple-icon.png" alt="apple icon"> Apple Store</a>
+                    <a href="#" class="bttn-white sq"><img src="images/play-store-icon.png" alt="Play Store Icon"> Play Store</a>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- Home-Area-End -->
+    <!-- Feature-Area -->
+    <section class="feature-area section-padding-top" id="features_page">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12 col-sm-8 col-sm-offset-2">
+                    <div class="page-title text-center">
+                        <h5 class="title">Recursos</h5>
+                        <div class="space-10"></div>
+                        <h3>Principais Funcionalidades</h3>
+                        <div class="space-60"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xs-12 col-sm-6 col-md-4">
+                    <div class="service-box wow fadeInUp" data-wow-delay="0.2s">
+                        <div class="box-icon">
+                            <i class="lnr lnr-rocket"></i>
+                        </div>
+                        <h4>Rápido e Seguro</h4>
+                        <p>Apontamento de horas super rápido, fácil e seguro</p>
+                    </div>
+                    <div class="space-60"></div>
+                    <div class="service-box wow fadeInUp" data-wow-delay="0.4s">
+                        <div class="box-icon">
+                            <i class="lnr lnr-paperclip"></i>
+                        </div>
+                        <h4>Compartilhável</h4>
+                        <p>Compartilhamento de ponto eletrônico com superiores e gestores</p>
+                    </div>
+                    <div class="space-60"></div>
+                    <div class="service-box wow fadeInUp" data-wow-delay="0.6s">
+                        <div class="box-icon">
+                            <i class="lnr lnr-cloud-download"></i>
+                        </div>
+                        <h4>Cloud Storage</h4>
+                        <p>Os dados ficam na nuvem podendo se acessado de qualquer parte do mundo.</p>
+                    </div>
+                    <div class="space-60"></div>
+                </div>
+                <div class="hidden-xs hidden-sm col-md-4">
+                    <figure class="mobile-image">
+                        <img src="images/feature-image.png" alt="Feature Photo">
+                    </figure>
+                </div>
+                <div class="col-xs-12 col-sm-6 col-md-4">
+                    <div class="service-box wow fadeInUp" data-wow-delay="0.2s">
+                        <div class="box-icon">
+                            <i class="lnr lnr-clock"></i>
+                        </div>
+                        <h4>Notificações</h4>
+                        <p>Entrada - pausa - retorno - saída - horas extras - fechamento de mês.</p>
+                    </div>
+                    <div class="space-60"></div>
+                    <div class="service-box wow fadeInUp" data-wow-delay="0.4s">
+                        <div class="box-icon">
+                            <i class="lnr lnr-laptop-phone"></i>
+                        </div>
+                        <h4>Multi-Plataforma</h4>
+                        <p>Pode ser utilizado em ambientes desktop, table ou celular.</p>
+                    </div>
+                    <div class="space-60"></div>
+                    <div class="service-box wow fadeInUp" data-wow-delay="0.6s">
+                        <div class="box-icon">
+                            <i class="lnr lnr-cog"></i>
+                        </div>
+                        <h4>Configurações</h4>
+                        <p>Opções fáceis e simples tornando navegabilidade mais amigável</p>
+                    </div>
+                    <div class="space-60"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Feature-Area-End -->    
+    <!--Price-Area -->
+    <section class="section-padding price-area" id="price_page">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12">
+                    <div class="page-title text-center">
+                        <h5 class="title">Preços & Planos</h5>
+                        <h3 class="dark-color">Oferecemos os seguintes preços dentro desses planos</h3>
+                        <div class="space-60"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xs-12 col-sm-6">
+                    <div class="price-box">
+                        <div class="price-header">
+                            <div class="price-icon">
+                                <span class="lnr lnr-rocket"></span>
+                            </div>
+                            <h4 class="upper">Individual</h4>
+                        </div>
+                        <div class="price-body">
+                            <ul>
+                                <li>1º Mês Grátis</li>
+                                <li>1 Conta</li>
+                                <li>1 Relatório</li>
+                                <li>1 Grupo de Trabalho</li>
+                            </ul>
+                        </div>
+                        <div class="price-rate">
+                            <sup>&#36;</sup> <span class="rate">1,00</span> <small>/Mês</small>
+                        </div>
+                        <div class="price-footer">
+                            <a href="#" class="bttn-white">Adquirir</a>
+                        </div>
+                    </div>
+                    <div class="space-30 hidden visible-xs"></div>
+                </div>
+                
+                <div class="col-xs-12 col-sm-6">
+                    <div class="price-box">
+                        <div class="price-header">
+                            <div class="price-icon">
+                                <span class="lnr lnr-pie-chart"></span>
+                            </div>
+                            <h4 class="upper">Empresarial</h4>
+                        </div>
+                        <div class="price-body">
+                            <ul>
+                                <li>1º Mês Grátis</li>
+                                <li>Contas Ilimitadas</li>
+                                <li>Relatórios Ilimitados</li>
+                                <li>Grupos de Trabalho Ilimitados</li>
+                            </ul>
+                        </div>
+                        <div class="price-rate">
+                            <sup>&#36;</sup> <span class="rate">0,25</span>(por usuário) <small>/Mês</small>
+                        </div>
+                        <div class="price-footer">
+                            <a href="#" class="bttn-white">Adquirir</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--Price-Area-End -->
+    <!--Questions-Area -->
+    <section id="questions_page" class="questions-area section-padding">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12">
+                    <div class="page-title text-center">
+                        <h5 class="title">FAQ</h5>
+                        <h3 class="dark-color">Perguntas Frequentes</h3>
+                        <div class="space-60"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xs-12 col-sm-6">
+                    <div class="toggole-boxs">
+                        <h3>Por que eu deveria usar WorkTime? </h3>
+                        <div>
+                            <p>WorkTime possibilita realizar apontamentos de horários de trabalho sem a necessidade de ter de comprar aparelhos gigantescos como relógios de ponto, ou gastar com folhas e cartoletas para registro de ponto.<br>
+                            Desta forma haverá ainda mais dois benefícios: Ecologicamente você contribui para utilizar menos recursos da natureza como papeis e Economicamente reduzirá seus gastos</p>
+                        </div>
+                        <h3>Por quanto tempo posso usar? </h3>
+                        <div>
+                            <p>WorkTime pode ser usado por quanto tempo desejar.</p>
+                        </div>
+                        <h3>Quanto custa? </h3>
+                        <div>
+                            <p>O primeiro mês é de graça<br>
+                                Após esse período será cobrado R$ 1,00 de usuários individuais e R$ 0,25 de cada conta do plano empresarial!</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-6">
+                    <div class="space-20 hidden visible-xs"></div>
+                    <div class="toggole-boxs">
+                        <h3>Como funciona?</h3>
+                        <div>
+                            <p>TimeSheet Online é uma plataforma online que resgata os apontamentos realizados atravéz de um computador, tablet ou ceular!<br>
+                                Basta abrir o site ou aplicativo e apontar de forma rápida e intuitiva seus horários</p>
+                        </div>
+                        <h3>Ele funciona sem internet? </h3>
+                        <div>
+                            <p>Tendo baixado aplicativo sim ele funciona sem internet<br>
+                            Quando entrar na internet novamente será sincronizado</p>
+                        </div>
+                        <h3>De que forma saberá onde estou? </h3>
+                        <div>
+                            <p>Atravéz do GPS do celular ou tablet e pela Geolocalização dos browser (deverá aceitar localização).</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--Questions-Area-End -->   
+    <!-- About-Area -->
+    <section class="section-padding" id="about_page">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12 col-md-10 col-md-offset-1">
+                    <div class="page-title text-center">
+                        <img src="images/about-logo.png" alt="About Logo">
+                        <div class="space-20"></div>
+                        <h5 class="title">Sismodulos</h5>
+                        <div class="space-30"></div>
+                        <h3 class="blue-color">WorkTime é mais um produto da agência SISMODULOS</h3>
+                        <div class="space-20"></div>
+                        <p>Criamos sistemas, sites, portais e aplicativos voltados para solucionar e facilitar o dia-a-dia de empresas e autônomos</p>
+                        <p><b>Visão</b><br>
+                            “Ser uma opção viável e confiável de armazenamento
+                            de dados em cloud computing comprometida com a
+                            qualidade e satisfação dos clientes”
+                        </p>
+                        <p><b>Missão</b><br>
+                            “Prestar serviços no ambiente cloud e plataformas
+                            digitais com alta confiabilidade e disponibilidade
+                            atendendo seus clientes em qualquer parte do mundo
+                            com total satisfação e segurança”
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- About-Area-End -->    
+    <!--Cadastro-->
+    <section id="cadastro" class="cadastro-area section-padding">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12">
+                    <div class="page-title text-center">
+                        <h5 class="title">Acesso Restrito</h5>                        
+                        <div class="space-60"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xs-6">                    
+                    <div class="col-sm-12">
+                        <h3 class="dark-color">Não sou cadastrado</h3>
+                        <form action="" method="post" id="cadastrar-form">
+                            <input type="text" id="cad_nome" name="cad_nome" class="form-control" placeholder="Nome completo">
+                            <input type="text" id="cad_email" name="cad_email" class="form-control" placeholder="Email">
+                            <input type="password" id="cad_senha" name="cad_senha" class="form-control" placeholder="Senha">
+                            <input class="form-control" type="submit" name="cadastrar" value="Cadastrar">
+                            <span class="help-block" id="cad_msg"></span>
+                        </form>
+                    </div>
+                </div>
+                <div class="col-xs-6">                    
+                    <div class="col-sm-12">
+                        <h3 class="dark-color">Já sou cadastrado</h3>
+                        <form action="" method="post" id="login-form">
+                            <input type="text" id="login_usuario" name="login_usuario" class="form-control" placeholder="Email">
+                            <input type="password" id="login_senha" name="login_senha" class="form-control" placeholder="Senha">
+                            <input class="form-control" type="submit" name="logar" value="Logar">
+                            <span class="help-block" id="login_msg"></span>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--Cadastro-->   
+    <section id="cadastro" class="cadastro-area section-padding">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12">
+                    <div class="page-title text-center">
+                        <h5 class="title">Feedback</h5>                        
+                        <div class="space-60"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xs-3">                    
 
+                </div>
+                <div class="col-xs-6">                    
+                    <div class="col-sm-12">
+                        <h3 class="dark-color text-center">Nos envie um feedback</h3>
+                        <form action="success.html" method="post" id="email-form">
+                            <input type="text" id="email_nome" name="Nome" class="form-control" placeholder="Nome">
+                            <input type="text" id="email_email" name="email" class="form-control" placeholder="Email">
+                            <input type="text" id="email_telefone" name="telefone" class="form-control" placeholder="Telefone">
+                            <input type="text" id="email_assunto" name="assunto" class="form-control" placeholder="Assunto">
+                            <textarea id="email_mensagem" name="mensagem" class="form-control" placeholder="Menságem"></textarea>
+                            <input class="form-control m-t-20" type="submit" name="logar" value="Enviar">
+                            <span class="help-block" id="email_msg"></span>
+                        </form>
+                    </div>
+                </div>
+                <div class="col-xs-3">                    
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Footer-Area -->
+    <footer class="footer-area" id="contact_page">
+        <div class="section-padding">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-12">
+                        <div class="page-title text-center">
+                            <h5 class="title">Contato</h5>
+                            <h3 class="dark-color">Nossos canais de contatos</h3>
+                            <div class="space-60"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-12 col-sm-4">
+                        <div class="footer-box">
+                            <div class="box-icon">
+                                <span class="lnr lnr-map-marker"></span>
+                            </div>
+                            <p>São Paulo/SP<br />Rua Francisco Vialaça,100</p>
+                        </div>
+                        <div class="space-30 hidden visible-xs"></div>
+                    </div>
+                    <div class="col-xs-12 col-sm-4">
+                        <div class="footer-box">
+                            <div class="box-icon">
+                                <span class="lnr lnr-phone-handset"></span>
+                            </div>
+                            <p>+55 11 99543-0496<br /></p>
+                        </div>
+                        <div class="space-30 hidden visible-xs"></div>
+                    </div>
+                    <div class="col-xs-12 col-sm-4">
+                        <div class="footer-box">
+                            <div class="box-icon">
+                                <span class="lnr lnr-envelope"></span>
+                            </div>
+                            <p>contato@sismodulos.com.br <br /> mrlkaco@hotmail.com
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Footer-Bootom -->
+        <div class="footer-bottom">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-12 col-md-5">
+                        <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+            <span>Copyright &copy;<script>document.write(new Date().getFullYear());</script> Todos direitos reservados</span>
+            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                        <div class="space-30 hidden visible-xs"></div>
+                    </div>
+                    <div class="col-xs-12 col-md-7">
+                        <a href="https://www.sismodulos.com.br" target="_blank" class="float-right">www.sismodulos.com.br</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Footer-Bootom-End -->
+    </footer>
+    <!-- Footer-Area-End -->
+    <div class="button-popup-chat">
+        <span class="lnr lnr-bubble"></span>
+    </div>
+    <div class="popup-chat">
+        <div class="header-chat">
+            <i class="lnr lnr-cross close-chat"></i>
+            <div class="box-icon">
+                <img src="images/logo_48.png">
+            </div>
+            <span>WorkTime</span>
+        </div>        
+    </div>
+    <!--Vendor-JS-->
+    <script src="js/vendor/jquery-1.12.4.min.js"></script>
+    <script src="js/vendor/jquery-ui.js"></script>
+    <script src="js/vendor/bootstrap.min.js"></script>
+    <!--Plugin-JS-->
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/cadastrar-form.js"></script>
+    <script src="js/email-form.js"></script>
+    <script src="js/login-form.js"></script>
+    <script src="js/ajaxchimp.js"></script>
+    <script src="js/scrollUp.min.js"></script>
+    <script src="js/magnific-popup.min.js"></script>
+    <script src="js/wow.min.js"></script>
+    <!--Main-active-JS-->
+    <script src="js/main.js"></script>
+    <script>
+        $(function(){
+            $('.button-popup-chat').click(function(event){
+                $(this).hide();
+                $('.popup-chat').show().append('<iframe frameborder="0" allow="microphone;" width="350" height="530" src="https://console.dialogflow.com/api-client/demo/embedded/33826402-fbef-4605-9687-899e869d5547"></iframe>');
+            });
+            $('.close-chat').click(function(){
+                $('.popup-chat').hide().find('iframe').remove();
+                $('.button-popup-chat').show();
+            });
+        });
+    </script>
 </body>
-
 </html>

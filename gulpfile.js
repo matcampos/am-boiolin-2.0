@@ -9,7 +9,7 @@ var rename = require('gulp-rename');
 var scssFiles = './src/scss/style.scss';
 
 
-
+var indexFile = './src/scss/index.scss';
 // CSS destination
 var cssDest = './css';
 
@@ -31,6 +31,12 @@ gulp.task('sassdev', function() {
       .pipe(gulp.dest(cssDest));
   });
 
+  gulp.task('indexdev', function() {
+    return gulp.src(indexFile)
+      .pipe(sass(sassDevOptions).on('error', sass.logError))
+      .pipe(gulp.dest(cssDest));
+  });
+
 // Task 'sassprod' - Para executar o comando usamos 'gulp sassprod'
 gulp.task('sassprod', function() {
     return gulp.src(scssFiles)
@@ -39,15 +45,22 @@ gulp.task('sassprod', function() {
       .pipe(gulp.dest(cssDest));
   });
 
+  gulp.task('indexprod', function() {
+    return gulp.src(indexFile)
+      .pipe(sass(sassProdOptions).on('error', sass.logError))
+      .pipe(rename('index.min.css'))
+      .pipe(gulp.dest(cssDest));
+  });
+
 
 
 
 // Task 'watch' - Para executar o comando usamos 'gulp watch'
 gulp.task('watch', function() {
-    gulp.watch(scssFiles, ['sassdev', 'sassprod']);
+    gulp.watch(scssFiles, ['sassdev', 'sassprod', 'indexdev', 'indexprod']);
 });
 
 
 // Default task - Para executar o comando usamos 'gulp'
-gulp.task('default', ['sassdev', 'sassprod', 'watch']);
+gulp.task('default', ['sassdev', 'sassprod', 'indexdev', 'indexprod', 'watch']);
 
