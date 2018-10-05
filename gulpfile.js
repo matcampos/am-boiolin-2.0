@@ -57,7 +57,8 @@ gulp.task('sassprod', function() {
 
 // Task 'watch' - Para executar o comando usamos 'gulp watch'
 gulp.task('watch', function() {
-    gulp.watch(scssFiles, ['sassdev', 'sassprod', 'indexdev', 'indexprod']);
+    gulp.watch(scssFiles, ['sassdev', 'sassprod']);
+    gulp.watch(indexFile, ['indexdev', 'indexprod']);
 });
 
 
